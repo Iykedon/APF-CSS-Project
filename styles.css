@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color:#fff;
+  color:white;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background-color: #30d646;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+ p {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #2ee680;
+  margin-bottom: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid #59f132;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact p {
+  margin: 10px 0;
+}
+
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  header .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  main {
+      padding: 0 10px;
+  }
+
+  .profile-image {
+      width: 150px;
+      height: 150px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  .project h3 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 18px;
+  }
+
+  nav ul li {
+      margin: 3px 0;
+  }
+
+  .profile-image {
+      width: 120px;
+      height: 120px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  .project h3 {
+      font-size: 18px;
+  }
+}
